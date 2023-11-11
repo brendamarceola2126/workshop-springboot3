@@ -1,6 +1,7 @@
 package com.educandoweb.course.entities;
 
 import java.io.Serializable;
+
 import java.time.Instant;
 import java.util.Objects;
 
@@ -27,6 +28,7 @@ public class Order implements Serializable {
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'", timezone = "GMT")
 	private Instant moment;
 	
+	@SuppressWarnings("unused")
 	private Integer orderStatus;
 	
 	@ManyToOne
